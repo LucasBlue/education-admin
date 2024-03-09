@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    //代表将所有的common.js 规范的模块都转换成 es6 的模块规范
+    "esModuleInterop": true,//因为 react 的资源是通过 common.js 规范导出的，所以需要设置 esModuleInterop 为 true
+    "skipLibCheck": true,//跳过第三方库类型检查
+    "resolveJsonModule": true, //允许导入 json 文件
+    "noEmit": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  }
+}
